@@ -17,17 +17,19 @@ const App = () => (
     </div>
 
     <div className="ed-grid m-grid-3">
-      <Curso/>
-      <Curso/>
-      <Curso/>
-      <Curso/>
-      <Curso/>
-      <Curso/>
-      <Curso/>
-      <Curso/>
-      <Curso/>
-      <Curso/>
-    </div>
+      <Curso 
+        title="React desde cero con EDteam" 
+        image="https://edteam-media.s3.amazonaws.com/blogs/original/05ebfada-ca24-4d09-94e2-8a77aa63ee13.jpg" 
+        price="20 USD" 
+        profesor="Kike Aguero"
+      />
+      <Curso 
+        title="HTML desde cero" 
+        image="https://edteam-media.s3.amazonaws.com/courses/small/bc8d9f08-7f85-442a-afb4-10a2a568d504.png" 
+        price="70 USD" 
+        profesor="Alberto Sanchez"
+      />
+    </div> 
   </>
 )
 

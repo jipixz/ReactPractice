@@ -1,6 +1,33 @@
 import "./styles/styles.scss"
 import Curso from './curso'
 
+const cursos = [
+  {
+    "title": "React desde cero",
+    "image": "https://edteam-media.s3.amazonaws.com/courses/small/35a55094-93d2-4091-b8b8-06949a5c63be.png",
+    "price": 20,
+    "profesor": "Ernesto Sanchez"
+  }, 
+  {
+    "title": "Drupal desde cero",
+    "image": "https://edteam-media.s3.amazonaws.com/courses/small/9ccf39c6-3e21-411d-9f09-c3589cf93750.png",
+    "price": 40,
+    "profesor": "Juan Perez"
+  }, 
+  {
+    "title": "Go desde cero",
+    "image": "https://edteam-media.s3.amazonaws.com/courses/small/ef9fcbc0-8292-4e65-8022-491baa2bac09.png",
+    "price": 30,
+    "profesor": "Pedro Hernández"
+  }, 
+  {
+    "title": "HTML desde cero",
+    "image": "https://edteam-media.s3.amazonaws.com/courses/small/cd6b19fb-bfcb-4197-bf68-4fd2ab7f37e2.png",
+    "price": 50,
+    "profesor": "Kike Chan"
+  }
+]
+
 const App = () => (
   <>
     <div className="main-banner img-container l-section" id="main-banner">
@@ -17,18 +44,9 @@ const App = () => (
     </div>
 
     <div className="ed-grid m-grid-3">
-      <Curso 
-        title="React desde cero con EDteam" 
-        image="https://edteam-media.s3.amazonaws.com/blogs/original/05ebfada-ca24-4d09-94e2-8a77aa63ee13.jpg" 
-        price="20 USD" 
-        profesor="Kike Aguero"
-      />
-      <Curso 
-        title="HTML desde cero" 
-        image="https://edteam-media.s3.amazonaws.com/courses/small/bc8d9f08-7f85-442a-afb4-10a2a568d504.png" 
-        price="70 USD" 
-        profesor="Alberto Sanchez"
-      />
+      {
+        cursos.map ( curso => <Curso title={curso.title} price={curso.price} image={curso.image} profesor={curso.profesor} />)
+      }
     </div> 
   </>
 )

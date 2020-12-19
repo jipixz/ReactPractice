@@ -1,5 +1,4 @@
 import "./styles/styles.scss"
-import Curso from './curso'
 import Banner from '../../fourth-class/src/banner'
 import Formulario from '../../fourth-class/src/formulario'
 

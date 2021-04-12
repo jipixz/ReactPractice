@@ -8,7 +8,7 @@ const Banner = () => (
             <div className="main-banner__data s-center">
             <p className="t2 s-mb-0">Mi primer curso</p>
             <p>Algún día será una página web</p>
-            <a href="https://www.google.com" className="button">Comprar</a>
+            <a href="https://www.facebook.com" className="button">Comprar</a>
             </div>
         </div>
         </div>
